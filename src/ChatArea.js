@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 
-class ChatArea extends Component {
-	render() {
-		return <div className="chatArea" />;
-	}
-}
+const ChatArea = props => (
+  <div className="chatArea">{props.messages.map(msg => <pre>{msg}</pre>)}</div>
+);
 
 export default ChatArea;

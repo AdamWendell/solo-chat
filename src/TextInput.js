@@ -1,13 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 
-class MessageBar extends Component {
-	render() {
-		return (
-			<div className="textInput">
-				<input type="text" />
-			</div>
-		);
-	}
-}
+const MessageBar = props => (
+  <div className="textInput">
+    <input type="text" value={props.value} onChange={props.onChange} />
+  </div>
+);
 
 export default MessageBar;
